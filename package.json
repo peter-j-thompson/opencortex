@@ -1,0 +1,45 @@
+{
+  "name": "opencortex",
+  "version": "0.1.0",
+  "description": "Open-source code intelligence engine. Parses any codebase into architectural knowledge graphs — symbols, call graphs, communities, execution flows. Zero proprietary dependencies.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "opencortex": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "analyze": "tsx src/cli.ts analyze",
+    "test": "tsx src/test.ts"
+  },
+  "keywords": [
+    "code-intelligence",
+    "static-analysis",
+    "call-graph",
+    "community-detection",
+    "architecture",
+    "ast",
+    "typescript",
+    "ai-agents",
+    "opencortex",
+    "code-understanding"
+  ],
+  "author": "Cove AI <hello@coveai.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peter-j-thompson/opencortex.git"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "ts-morph": "^25.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
