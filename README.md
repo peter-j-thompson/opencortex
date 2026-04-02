@@ -1,6 +1,13 @@
-# OpenCortex
+# OpenCortex — TypeScript Code Intelligence & Dependency Graph
 
-**Architectural intelligence for codebases.** OpenCortex parses any TypeScript/JavaScript project into a knowledge graph of symbols, call chains, communities, and execution flows — giving AI agents (or humans) a senior-engineer-level understanding of code architecture in seconds.
+**Codebase analysis for AI agents and developers.** OpenCortex parses any TypeScript/JavaScript
+project into a knowledge graph of symbols, call chains, and execution flows — giving AI agents
+(or humans) senior-engineer-level understanding of code architecture in seconds.
+
+[![npm version](https://img.shields.io/npm/v/opencortex.svg)](https://www.npmjs.com/package/opencortex)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
 
 ```
 opencortex analyze ~/my-project
@@ -40,6 +47,19 @@ OpenCortex reads your codebase and builds:
 Every AI coding agent needs to understand code architecture before making changes. Most tools give you text search or embedding-based retrieval. OpenCortex gives you the actual dependency graph — the same mental model a senior engineer builds after months on a project, generated in seconds.
 
 Built as the analytical engine for [OpenMemory](https://github.com/peter-j-thompson/openmemory). Memory remembers. Cortex analyzes.
+
+## Installation
+
+```bash
+# Install globally
+npm install -g opencortex
+
+# Or as a project dependency
+npm install opencortex
+
+# Analyze any project immediately
+opencortex analyze /path/to/your/project
+```
 
 ## Quick Start
 
@@ -94,6 +114,22 @@ analyze({
   exclude: ['**/*.test.*'], // Glob patterns to exclude
 });
 ```
+
+## Compared to Other Code Analysis Tools
+
+| Feature | OpenCortex | tree-sitter | ctags | Sourcegraph | GitHub Copilot |
+|---------|:-----------:|:-----------:|:-----:|:-----------:|:--------------:|
+| Call graph (who calls whom) | ✅ | ❌ | ❌ | Partial | ❌ |
+| Community detection | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Critical symbol ranking | ✅ | ❌ | ❌ | ❌ | ❌ |
+| Execution flow tracing | ✅ | ❌ | ❌ | Partial | ❌ |
+| Programmatic API | ✅ | ✅ | ❌ | API (paid) | ❌ |
+| Runs fully offline | ✅ | ✅ | ✅ | ❌ | ❌ |
+| AI agent integration | ✅ | ❌ | ❌ | ❌ | ✅ |
+| TypeScript-native | ✅ | ❌ | ❌ | ✅ | N/A |
+| Open source (MIT) | ✅ | ✅ | ✅ | ❌ | ❌ |
+
+> **tree-sitter** gives you syntax trees — OpenCortex gives you *meaning*: what calls what, what's critical, what belongs together.
 
 ## Architecture
 
