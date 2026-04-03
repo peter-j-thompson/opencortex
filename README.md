@@ -1,6 +1,12 @@
-# OpenCortex
+# OpenCortex — TypeScript Code Intelligence & Dependency Graph
 
-**Architectural intelligence for codebases.** OpenCortex parses any TypeScript/JavaScript project into a knowledge graph of symbols, call chains, communities, and execution flows — giving AI agents (or humans) a senior-engineer-level understanding of code architecture in seconds.
+[![npm version](https://img.shields.io/npm/v/opencortex.svg)](https://www.npmjs.com/package/opencortex)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+
+
+**Codebase analysis for AI agents and developers.** OpenCortex parses any TypeScript/JavaScript project into a knowledge graph of symbols, call chains, communities, and execution flows — giving AI agents (or humans) a senior-engineer-level understanding of code architecture in seconds.
 
 ```
 opencortex analyze ~/my-project
@@ -40,6 +46,18 @@ OpenCortex reads your codebase and builds:
 Every AI coding agent needs to understand code architecture before making changes. Most tools give you text search or embedding-based retrieval. OpenCortex gives you the actual dependency graph — the same mental model a senior engineer builds after months on a project, generated in seconds.
 
 Built as the analytical engine for [OpenMemory](https://github.com/peter-j-thompson/openmemory). Memory remembers. Cortex analyzes.
+
+## Installation
+
+```bash
+npm install -g opencortex
+```
+
+Then analyze any TypeScript/JavaScript project:
+
+```bash
+opencortex analyze /path/to/your/project
+```
 
 ## Quick Start
 
@@ -215,6 +233,20 @@ interface ExecutionFlow {
 - **Onboarding** — New to a repo? Run `opencortex analyze` and get the architectural map in seconds.
 - **Refactoring Planning** — See community boundaries before reorganizing. Know which cross-community dependencies you'll break.
 - **Code Review Context** — Understand the blast radius of a PR by checking which communities and flows the changed symbols touch.
+
+## Comparison
+
+OpenCortex vs. other code intelligence tools:
+
+| Tool | Language Support | Call Graph | AI-Ready Output | Community Detection | Open Source |
+|------|:---:|:---:|:---:|:---:|:---:|
+| **OpenCortex** | TS/JS (+ more planned) | ✅ Full | ✅ JSON | ✅ Label propagation | ✅ MIT |
+| tree-sitter | Many | ❌ Parse only | ❌ | ❌ | ✅ MIT |
+| ctags | Many | ❌ Symbols only | ❌ | ❌ | ✅ |
+| Sourcegraph | Many | Partial | Partial | ❌ | Partial |
+| GitHub Copilot | Many | ❌ | ❌ | ❌ | ❌ |
+
+> **Target keywords**: `code intelligence typescript`, `codebase analysis AI agents`, `tree-sitter alternative`, `call graph generator typescript`
 
 ## Companion Project
 
