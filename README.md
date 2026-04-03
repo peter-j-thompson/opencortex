@@ -47,6 +47,8 @@ Every AI coding agent needs to understand code architecture before making change
 
 Built as the analytical engine for [OpenMemory](https://github.com/peter-j-thompson/openmemory). Memory remembers. Cortex analyzes.
 
+⭐ [Star OpenCortex](https://github.com/peter-j-thompson/opencortex) to help us reach more developers
+
 ## Installation
 
 ```bash
