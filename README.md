@@ -39,6 +39,7 @@ See the benchmark report: [`examples/reports/openclaw-core.md`](./examples/repor
 - **Install**: `npm install -g opencortex`
 - **Try it**: `opencortex analyze /path/to/your/project`
 - **See a real report**: [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md)
+- **Architecture**: [`ARCHITECTURE.md`](./ARCHITECTURE.md)
 - **Marketing draft**: [`MARKETING.md`](./MARKETING.md)
 - **Positioning notes**: [`POSITIONING.md`](./POSITIONING.md)
 - **Landing page source**: [`site/`](./site)
