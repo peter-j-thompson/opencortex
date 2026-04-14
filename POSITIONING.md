@@ -2,15 +2,15 @@
 
 ## Category
 
-**OpenCortex is the structural pre-flight layer for coding agents.**
+**OpenCortex is the decision-ready pre-flight layer for coding agents.**
 
-It turns a TypeScript or JavaScript codebase into symbols, call graphs, communities, critical symbols, and execution flows so an agent can plan against real architecture before it writes code.
+It turns a TypeScript or JavaScript codebase into structural intelligence, then turns that into pre-edit briefs, blast-radius analysis, risk signals, and QA guidance so an agent can plan against real architecture before it writes code.
 
 ## The simple mental model
 
 - **Wikis explain code**
 - **Retrieval finds code**
-- **OpenCortex maps code architecture**
+- **OpenCortex tells you what matters, what breaks, and what to do next**
 
 That is the lane.
 
@@ -72,28 +72,30 @@ Those can sit beside it. OpenCortex should own the structural analysis layer und
 The strongest entry point is not "full repo intelligence."
 It is:
 
-**Give your coding agent an architectural map before it writes code.**
+**Give your coding agent an architectural map, a risk read, and a next-action plan before it writes code.**
 
 That wedge is:
 - easier to demo
 - easier to trust
 - easier to adopt
 - easier to integrate into existing agent workflows
+- more differentiated than just exposing raw graph output
 
 ## Messaging pillars
 
-1. **Structural pre-flight for coding agents**
-2. **Architecture, not fuzzy retrieval**
-3. **Local-first and open source**
-4. **Fast enough for real development workflows**
+1. **Decision-ready pre-flight for coding agents**
+2. **Risk, blast radius, and next actions, not just raw graph data**
+3. **Architecture, not fuzzy retrieval**
+4. **Local-first and open source**
+5. **Fast enough for real development workflows**
 
 ## Messaging lines worth reusing
 
-- **Give your agent an architectural map before it writes code.**
-- **Wikis explain. Retrieval finds. OpenCortex maps architecture.**
+- **Give your agent an architectural map, risk read, and next-action plan before it writes code.**
+- **Wikis explain. Retrieval finds. OpenCortex tells you what matters, what breaks, and what to do next.**
 - **Run OpenCortex before your agent edits a repo.**
-- **Architecture-aware context for coding agents.**
-- **The structural layer underneath repo-aware AI workflows.**
+- **Safer code changes for coding agents.**
+- **The decision layer above repo structure.**
 
 ## Strategic guardrail
 

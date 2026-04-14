@@ -2,16 +2,16 @@
 
 ## Positioning
 
-**OpenCortex is the structural pre-flight layer for coding agents.**
-It turns a TypeScript or JavaScript codebase into an architectural graph of symbols, call relationships, communities, critical symbols, and execution flows so an agent can understand the repo before it changes anything.
+**OpenCortex is the decision-ready pre-flight layer for coding agents.**
+It turns a TypeScript or JavaScript codebase into structural intelligence, then turns that into pre-edit briefs, blast-radius analysis, critical boundaries, and QA guidance so an agent can understand the repo before it changes anything.
 
 Short version:
 
-> OpenCortex gives coding agents an architectural map before they write code.
+> OpenCortex gives coding agents an architectural map, a risk read, and a next-action plan before they write code.
 
 Core mental model:
 
-> Wikis explain. Retrieval finds. OpenCortex maps architecture.
+> Wikis explain. Retrieval finds. OpenCortex tells you what matters, what breaks, and what to do next.
 
 ## Who this is for first
 
@@ -47,17 +47,17 @@ OpenCortex does.
 ### Against DeepWiki-style tools
 - they explain code well
 - they help humans browse and learn
-- they are weaker as structural pre-flight before an edit
+- they do not tell an agent what the safest next move is
 
 ### Against embeddings/search tools
 - they help retrieve relevant snippets
 - they are weak on architectural truth
-- they do not compute boundaries and flows directly
+- they do not compute blast radius, boundaries, and flows directly
 
 ### Against GitNexus-style platforms
 - those are broader repo-intelligence platforms
-- OpenCortex is the cleaner structural-analysis core
-- easier to embed, easier to trust, easier to explain
+- OpenCortex should not stop at raw graph access
+- OpenCortex wins by turning repo structure into opinionated decisions and workflows
 
 ## Why it is interesting
 
@@ -84,12 +84,12 @@ See: `examples/reports/openclaw-core.md`
 
 ## Strongest messaging angles
 
-### Angle 1: Structural pre-flight for coding agents
+### Angle 1: Decision-ready pre-flight for coding agents
 Before an agent edits code, run OpenCortex.
-It gets a structural map instead of guessing from retrieval.
+It gets a structural map, a risk read, and a next-action plan instead of guessing from retrieval.
 
-### Angle 2: Architecture visibility without enterprise bloat
-OpenCortex gives architectural visibility without needing a hosted platform, index farm, or proprietary lock-in.
+### Angle 2: Safer code changes without enterprise bloat
+OpenCortex gives engineering teams blast radius, critical boundaries, and QA guidance without needing a hosted platform, index farm, or proprietary lock-in.
 
 ### Angle 3: Faster onboarding for real repos
 Run it on a messy TypeScript repo and get useful structure in seconds.
@@ -97,12 +97,12 @@ Run it on a messy TypeScript repo and get useful structure in seconds.
 ## Homepage draft
 
 ### Hero
-**Give your agent an architectural map before it writes code**
+**Give your agent an architectural map, risk read, and next-action plan before it writes code**
 
-OpenCortex turns your codebase into symbols, call graphs, communities, critical symbols, and execution flows so agents and developers can plan against real architecture instead of fuzzy retrieval.
+OpenCortex turns your codebase into structural intelligence so agents and developers can make safer changes instead of guessing from retrieval.
 
 ### Subhead
-Structural pre-flight for coding agents. Local-first. Open source. No proprietary indexing pipeline required.
+Decision-ready pre-flight for coding agents. Local-first. Open source. No proprietary indexing pipeline required.
 
 ### CTA ideas
 - Analyze a repo in 30 seconds
@@ -141,8 +141,9 @@ Structural pre-flight for coding agents. Local-first. Open source. No proprietar
 ## What I would say plainly
 
 Do not market this as "yet another code analysis tool."
+Do not market this as "our graph is better."
 Market it as:
 
-**the structural pre-flight layer for AI code agents**
+**the decision-ready pre-flight layer for AI code agents**
 
-That is the sharpest wedge.
+That is the sharper wedge.

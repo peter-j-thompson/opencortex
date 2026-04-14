@@ -3,13 +3,13 @@
 ## Hero
 
 ### Eyebrow
-Structural pre-flight for coding agents
+Decision-ready pre-flight for coding agents
 
 ### Headline
-Give your agent an architectural map before it writes code
+Give your agent an architectural map, risk read, and next-action plan before it writes code
 
 ### Subheadline
-OpenCortex turns your TypeScript and JavaScript codebase into symbols, call graphs, communities, critical symbols, and execution flows so agents can plan against real architecture instead of fuzzy retrieval.
+OpenCortex turns your TypeScript and JavaScript codebase into structural intelligence so agents can make safer changes instead of guessing from fuzzy retrieval.
 
 ### Proof strip
 - 1,090-file OpenClaw benchmark
@@ -35,66 +35,51 @@ Most repo-aware AI workflows still rely on some mix of:
 - wiki-like explanations
 
 Those help with retrieval and orientation, but they do not tell an agent:
-- which symbols are truly critical
-- which modules form real boundaries
-- where cross-module dependencies actually live
-- what the likely execution paths are
+- what actually matters
+- what is risky
+- what will probably break
+- what should be tested next
 
-OpenCortex gives that map.
+OpenCortex gives that decision layer.
 
-## Section 2: Where OpenCortex fits
+## Section 2: What OpenCortex tells you
 
-### Retrieval tools
-Great for finding files and snippets.
-Weak on architectural truth.
-
-### Wiki tools
-Great for explaining code to humans.
-Weak on structural dependency mapping.
-
-### OpenCortex
-Maps the codebase itself.
-It gives agents structure, boundaries, and execution paths before they change anything.
+OpenCortex helps turn raw repo structure into:
+- a pre-edit brief
+- blast-radius analysis
+- critical boundaries and risk hotspots
+- execution path context
+- QA guidance for safer merges
 
 ### One-line summary
-Wikis explain. Retrieval finds. OpenCortex maps architecture.
+Wikis explain. Retrieval finds. OpenCortex tells you what matters, what breaks, and what to do next.
 
-## Section 3: What OpenCortex produces
+## Section 3: Why this matters for agents
 
-OpenCortex turns a repo into:
-- symbols with line-level precision
-- a call graph of who calls whom
-- communities that reveal real module boundaries
-- critical symbols that highlight architectural risk points
-- execution flows that trace meaningful paths through the codebase
-
-## Section 4: Why this matters for agents
-
-OpenCortex acts like a structural pre-flight layer:
+OpenCortex acts like a decision-ready pre-flight layer:
 1. analyze the repo
-2. feed the output to the agent
-3. let the agent plan against real architecture instead of guesses
+2. identify the risky boundaries and likely blast radius
+3. give the agent a better plan before it edits anything
 
-## Section 5: Why this matters for humans
+## Section 4: Why this matters for humans
 
 OpenCortex also works for:
-- senior engineers doing architecture review
+- senior engineers reviewing risky changes
 - teams onboarding into large TypeScript repos
 - consultants auditing real-world codebases
-- devtools builders creating repo-aware workflows
+- engineering leaders trying to reduce avoidable breakage
 
-## Section 6: Why OpenCortex is different
+## Section 5: Why OpenCortex is different
 
-- focused on architectural structure
+- focused on safer changes, not just raw graph output
+- architecture-aware, not fuzzy retrieval
 - local-first
 - open source
 - MIT-licensed
 - no proprietary dependencies
-- no hosted indexing requirement
-- no vector database required
 - useful to both humans and agents
 
-## Section 7: Benchmark block
+## Section 6: Benchmark block
 
 ### Title
 A real benchmark, not toy output
@@ -102,23 +87,26 @@ A real benchmark, not toy output
 ### Body
 On a core OpenClaw benchmark slice, OpenCortex analyzed 1,090 files and surfaced 8,462 symbols, 10,407 edges, 30 communities, and 48 execution flows in about 3.4 seconds.
 
+### Why it matters
+That benchmark proves OpenCortex can build the structural layer fast enough to power real pre-edit decision support.
+
 ### CTA
 Read the OpenClaw benchmark report
 
-## Section 8: CLI example
+## Section 7: CLI example
 
 ```bash
 npm install -g opencortex
 opencortex analyze /path/to/repo --output markdown --out reports/architecture.md
 ```
 
-## Section 9: Closing CTA
+## Section 8: Closing CTA
 
 ### Headline
 Run OpenCortex before your agent edits a repo
 
 ### Body
-If your workflow depends on coding agents, architecture-aware context should not be optional.
+If your workflow depends on coding agents, architecture-aware risk and QA context should not be optional.
 
 ### CTA options
 - Analyze a repo now

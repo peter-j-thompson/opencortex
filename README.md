@@ -7,16 +7,17 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 
-OpenCortex parses a TypeScript or JavaScript codebase into a graph of **symbols, call relationships, communities, critical symbols, and execution flows** so an AI agent can understand architecture before it changes code.
+OpenCortex parses a TypeScript or JavaScript codebase into structural intelligence, then turns that into **pre-edit briefs, blast-radius analysis, critical boundaries, and QA guidance** so an AI agent can make safer changes.
 
-**Short version:** OpenCortex gives coding agents an architectural map before they write code.
+**Short version:** OpenCortex gives coding agents an architectural map, a risk read, and a next-action plan before they write code.
 
-> Wikis explain. Retrieval finds. OpenCortex maps architecture.
+> Wikis explain. Retrieval finds. OpenCortex tells you what matters, what breaks, and what to do next.
 
 ### Why people care
 
-- **Structural pre-flight for coding agents**: run OpenCortex before an agent edits code.
-- **Architecture visibility**: see critical symbols, cross-community boundaries, and execution paths.
+- **Decision-ready pre-flight for coding agents**: run OpenCortex before an agent edits code.
+- **Blast radius and risk**: see critical symbols, cross-community boundaries, and likely breakpoints.
+- **Next-action guidance**: use structural intelligence to generate QA plans and safer edit plans.
 - **Architecture, not fuzzy retrieval**: better than guessing from snippets and vague summaries.
 - **Local-first and open source**: no vector DB, no hosted indexing pipeline, no proprietary lock-in.
 

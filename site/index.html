@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenCortex, Structural pre-flight for coding agents</title>
+    <title>OpenCortex, Decision-ready pre-flight for coding agents</title>
     <meta
       name="description"
-      content="OpenCortex gives coding agents an architectural map before they write code. Analyze TypeScript and JavaScript repos into symbols, call graphs, communities, critical symbols, and execution flows."
+      content="OpenCortex gives coding agents an architectural map, a risk read, and a next-action plan before they write code."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -23,21 +23,16 @@
 
       <main>
         <section class="hero card">
-          <div class="eyebrow">Structural pre-flight for coding agents</div>
-          <h1>Give your agent an architectural map before it writes code</h1>
+          <div class="eyebrow">Decision-ready pre-flight for coding agents</div>
+          <h1>Give your agent an architectural map, risk read, and next-action plan before it writes code</h1>
           <p class="lede">
-            OpenCortex turns your TypeScript and JavaScript codebase into symbols, call graphs,
-            communities, critical symbols, and execution flows so agents can plan against real
-            architecture instead of fuzzy retrieval.
+            OpenCortex turns your TypeScript and JavaScript codebase into structural intelligence so
+            agents can make safer changes instead of guessing from fuzzy retrieval.
           </p>
 
           <div class="actions">
             <a class="button primary" href="#quickstart">Analyze a repo</a>
-            <a
-              class="button secondary"
-              href="./openclaw-core-report.html"
-              >See benchmark report</a
-            >
+            <a class="button secondary" href="./openclaw-core-report.html">See benchmark report</a>
           </div>
 
           <div class="proof-strip" aria-label="Benchmark proof">
@@ -56,46 +51,41 @@
             <p>
               Most repo-aware AI workflows still rely on keyword search, embeddings, file trees,
               vague summaries, and wiki-like explanations. Those help with retrieval and
-              orientation, but they do not tell an agent how the code is actually wired.
+              orientation, but they do not tell an agent what actually matters, what is risky, what
+              will probably break, or what should be tested next.
             </p>
-            <ul>
-              <li>Which symbols are truly critical?</li>
-              <li>Which modules form real boundaries?</li>
-              <li>Where do cross-module dependencies actually live?</li>
-              <li>What are the likely execution paths?</li>
-            </ul>
-            <p>OpenCortex gives that map.</p>
+            <p>OpenCortex gives that decision layer.</p>
           </article>
 
           <article class="card">
-            <h2>What OpenCortex produces</h2>
+            <h2>What OpenCortex tells you</h2>
             <ul>
-              <li>Symbols with line-level precision</li>
-              <li>A call graph of who calls whom</li>
-              <li>Communities that reveal real module boundaries</li>
-              <li>Critical symbols that highlight architectural risk points</li>
-              <li>Execution flows that trace meaningful paths through the codebase</li>
+              <li>A pre-edit brief</li>
+              <li>Blast-radius analysis</li>
+              <li>Critical boundaries and risk hotspots</li>
+              <li>Execution path context</li>
+              <li>QA guidance for safer merges</li>
             </ul>
           </article>
         </section>
 
         <section class="card">
           <div class="eyebrow">Where it fits</div>
-          <h2>Wikis explain. Retrieval finds. OpenCortex maps architecture.</h2>
+          <h2>Wikis explain. Retrieval finds. OpenCortex tells you what matters, what breaks, and what to do next.</h2>
           <div class="grid compare-grid">
             <article class="compare-card">
               <h3>Retrieval tools</h3>
-              <p>Great for finding files and snippets. Weak on architectural truth.</p>
+              <p>Great for finding files and snippets. Weak on risk, blast radius, and next actions.</p>
             </article>
             <article class="compare-card">
               <h3>Wiki tools</h3>
-              <p>Great for explaining code to humans. Weak on structural dependency mapping.</p>
+              <p>Great for explaining code to humans. Weak on pre-edit decision support.</p>
             </article>
             <article class="compare-card accent-card">
               <h3>OpenCortex</h3>
               <p>
-                Maps the codebase itself so agents get structure, boundaries, and execution paths
-                before they change anything.
+                Turns repo structure into opinionated engineering guidance before an agent changes
+                anything.
               </p>
             </article>
           </div>
@@ -104,24 +94,23 @@
         <section class="grid two-up">
           <article class="card">
             <h2>Why this matters for agents</h2>
-            <p>OpenCortex acts like a structural pre-flight layer:</p>
             <ol>
               <li>Analyze the repo</li>
-              <li>Feed the output to the agent</li>
-              <li>Let the agent plan against real architecture instead of guesses</li>
+              <li>Identify risky boundaries and likely blast radius</li>
+              <li>Give the agent a better plan before it edits anything</li>
             </ol>
             <p>
-              It gives coding agents architecture-aware context before they write a single line.
+              The goal is not more graph data. The goal is fewer blind edits and safer code changes.
             </p>
           </article>
 
           <article class="card">
             <h2>Why this matters for humans</h2>
             <ul>
-              <li>Senior engineers doing architecture review</li>
+              <li>Senior engineers reviewing risky changes</li>
               <li>Teams onboarding into large TypeScript repos</li>
               <li>Consultants auditing real-world codebases</li>
-              <li>Devtools builders creating repo-aware workflows</li>
+              <li>Engineering leaders trying to reduce avoidable breakage</li>
             </ul>
           </article>
         </section>
@@ -129,13 +118,13 @@
         <section class="card">
           <h2>Why OpenCortex is different</h2>
           <div class="pill-row">
-            <span class="pill">Architecture, not fuzzy retrieval</span>
+            <span class="pill">Safer changes, not just raw graph output</span>
+            <span class="pill">Architecture-aware, not fuzzy retrieval</span>
+            <span class="pill">Blast radius and QA guidance</span>
             <span class="pill">Local-first</span>
             <span class="pill">Open source</span>
             <span class="pill">MIT-licensed</span>
             <span class="pill">No proprietary dependencies</span>
-            <span class="pill">No hosted indexing requirement</span>
-            <span class="pill">No vector database required</span>
             <span class="pill">Useful to humans and agents</span>
           </div>
         </section>
@@ -149,6 +138,10 @@
               8,462 symbols, 10,407 edges, 30 communities, and 48 execution flows in about 3.4
               seconds.
             </p>
+            <p>
+              That benchmark proves OpenCortex can build the structural layer fast enough to power
+              real pre-edit decision support.
+            </p>
           </div>
           <div class="stats-grid">
             <div><strong>1,090</strong><span>files</span></div>
@@ -158,11 +151,7 @@
             <div><strong>48</strong><span>flows</span></div>
             <div><strong>3456ms</strong><span>duration</span></div>
           </div>
-          <a
-            class="text-link"
-            href="./openclaw-core-report.html"
-            >Read the OpenClaw benchmark report →</a
-          >
+          <a class="text-link" href="./openclaw-core-report.html">Read the OpenClaw benchmark report →</a>
         </section>
 
         <section id="quickstart" class="grid two-up">
@@ -175,8 +164,8 @@ opencortex analyze /path/to/repo --output markdown --out reports/architecture.md
           <article class="card">
             <h2>Run OpenCortex before your agent edits a repo</h2>
             <p>
-              If your workflow depends on coding agents, architecture-aware context should not be
-              optional.
+              If your workflow depends on coding agents, architecture-aware risk and QA context
+              should not be optional.
             </p>
             <div class="actions stacked-mobile">
               <a
