@@ -1,14 +1,43 @@
-# OpenCortex — TypeScript Code Intelligence & Dependency Graph
+# OpenCortex
+
+### Architectural code intelligence for AI agents and developers
 
 [![npm version](https://img.shields.io/npm/v/opencortex.svg)](https://www.npmjs.com/package/opencortex)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 
+OpenCortex parses a TypeScript or JavaScript codebase into a graph of **symbols, call relationships, communities, and execution flows** so an AI agent can understand architecture before it changes code.
 
-**Codebase analysis for AI agents and developers.** OpenCortex parses any TypeScript/JavaScript project into a knowledge graph of symbols, call chains, communities, and execution flows — giving AI agents (or humans) a senior-engineer-level understanding of code architecture in seconds.
+**Short version:** OpenCortex gives AI agents a senior-engineer-level map of a repo in seconds.
 
-```
+### Why people care
+
+- **Pre-flight for coding agents**: run OpenCortex before an agent edits code.
+- **Architecture visibility**: see critical symbols, cross-community boundaries, and execution paths.
+- **Local-first and open source**: no vector DB, no hosted indexing pipeline, no proprietary lock-in.
+
+### Quick proof
+
+On an OpenClaw benchmark slice, OpenCortex analyzed:
+
+- **1,090 files**
+- **8,462 symbols**
+- **10,407 edges**
+- **30 communities**
+- **48 execution flows**
+- in about **3.4 seconds**
+
+See the benchmark report: [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md)
+
+### Quick links
+
+- **Install**: `npm install -g opencortex`
+- **Try it**: `opencortex analyze /path/to/your/project`
+- **See a real report**: [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md)
+- **Marketing draft**: [`MARKETING.md`](./MARKETING.md)
+
+```bash
 opencortex analyze ~/my-project
 
 ═══════════════════════════════════════════════════════════
