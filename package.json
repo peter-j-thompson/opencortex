@@ -4,6 +4,21 @@
   "description": "Open-source code intelligence engine. Parses any codebase into architectural knowledge graphs — symbols, call graphs, communities, execution flows. Zero proprietary dependencies.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "!dist/test.d.ts",
+    "!dist/test.js",
+    "!dist/test.js.map",
+    "README.md",
+    "LICENSE"
+  ],
   "bin": {
     "opencortex": "dist/cli.js"
   },
@@ -11,7 +26,8 @@
     "build": "tsc",
     "dev": "tsx src/cli.ts",
     "analyze": "tsx src/cli.ts analyze",
-    "test": "tsx src/test.ts"
+    "test": "tsx src/test.ts",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
     "code-intelligence",
