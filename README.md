@@ -88,6 +88,47 @@ opencortex flows [path]          # Show execution flows
 opencortex json [path]           # Full analysis as JSON (for piping)
 ```
 
+### CLI Flags
+
+```bash
+--output <summary|json|markdown>   # analyze output format (default: summary)
+--out <file>                       # write output to a file instead of stdout
+--include <glob,glob>              # override include patterns
+--exclude <glob,glob>              # override exclude patterns
+--max-files <n>                    # limit parsed files
+--min-community-size <n>           # minimum symbols to form a community
+```
+
+Examples:
+
+```bash
+# Human-readable summary (default)
+opencortex analyze ./my-repo
+
+# JSON for agents and pipelines
+opencortex analyze ./my-repo --output json
+
+# Markdown report written to disk
+opencortex analyze ./my-repo --output markdown --out reports/opencortex.md
+
+# Legacy JSON command still works
+opencortex json ./my-repo --out reports/opencortex.json
+```
+
+### Repo Config: `.opencortex.json`
+
+OpenCortex will automatically load `.opencortex.json` from the target repo root when present. CLI flags always win.
+
+```json
+{
+  "include": ["src/**/*.ts", "scripts/**/*.ts"],
+  "exclude": ["**/*.test.ts", "dist/**"],
+  "maxFiles": 3000,
+  "minCommunitySize": 2,
+  "output": "markdown"
+}
+```
+
 ## Programmatic API
 
 ```typescript
@@ -108,12 +149,14 @@ console.log(result.flows);             // ExecutionFlow[]
 ```typescript
 analyze({
   rootDir: '/path/to/repo',
-  minCommunitySize: 2,     // Minimum symbols to form a community
-  maxFiles: 5000,          // Safety limit on files parsed
+  minCommunitySize: 2,      // Minimum symbols to form a community
+  maxFiles: 5000,           // Safety limit on files parsed
   include: ['src/**/*.ts'], // Glob patterns to include
   exclude: ['**/*.test.*'], // Glob patterns to exclude
 });
 ```
+
+Programmatic use stays focused on analysis. Output formatting, file writing, and `.opencortex.json` loading are CLI concerns.
 
 ## Architecture
 
