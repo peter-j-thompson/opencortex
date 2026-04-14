@@ -36,6 +36,7 @@ See the benchmark report: [`examples/reports/openclaw-core.md`](./examples/repor
 - **Try it**: `opencortex analyze /path/to/your/project`
 - **See a real report**: [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md)
 - **Marketing draft**: [`MARKETING.md`](./MARKETING.md)
+- **Landing page source**: [`site/`](./site)
 
 ```bash
 opencortex analyze ~/my-project
