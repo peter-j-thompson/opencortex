@@ -115,6 +115,10 @@ opencortex analyze ./my-repo --output markdown --out reports/opencortex.md
 opencortex json ./my-repo --out reports/opencortex.json
 ```
 
+### Example report
+
+Want to see the shape of a real benchmark? See the generated OpenClaw core report in [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md).
+
 ### Repo Config: `.opencortex.json`
 
 OpenCortex will automatically load `.opencortex.json` from the target repo root when present. CLI flags always win.

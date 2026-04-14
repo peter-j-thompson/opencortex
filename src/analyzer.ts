@@ -64,6 +64,7 @@ export function analyze(options: AnalyzeOptions): AnalysisResult {
     commitHash = execSync('git rev-parse --short HEAD', {
       cwd: rootDir,
       encoding: 'utf-8',
+      stdio: ['ignore', 'pipe', 'ignore'],
     }).trim();
   } catch { /* not a git repo */ }
 
