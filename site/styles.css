@@ -119,6 +119,11 @@ h1 {
   font-size: clamp(2.8rem, 7vw, 5.6rem);
 }
 
+.report-title {
+  max-width: none;
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+}
+
 h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
@@ -225,6 +230,17 @@ li + li {
   margin-top: 8px;
 }
 
+.dense-list li + li {
+  margin-top: 10px;
+}
+
+.report-card code {
+  font-family: "SFMono-Regular", ui-monospace, Menlo, Consolas, monospace;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
 .benchmark {
   display: grid;
   gap: 22px;
@@ -288,6 +304,10 @@ li + li {
   .page-shell {
     width: min(calc(100% - 20px), var(--max-width));
     padding-top: 12px;
+  }
+
+  .report-title {
+    font-size: 2rem;
   }
 
   .topbar {

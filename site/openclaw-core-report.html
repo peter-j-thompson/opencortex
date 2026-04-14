@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenCortex Benchmark Report, OpenClaw Core</title>
+    <meta
+      name="description"
+      content="OpenCortex benchmark report for an OpenClaw core slice: 1,090 files, 8,462 symbols, 10,407 edges, 30 communities, and 48 execution flows."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell report-shell">
+      <header class="topbar">
+        <div class="brand">OpenCortex Benchmark Report</div>
+        <nav>
+          <a href="./index.html">Home</a>
+          <a href="https://github.com/peter-j-thompson/opencortex" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="card">
+          <div class="eyebrow">OpenClaw core slice</div>
+          <h1 class="report-title">A real benchmark, not toy output</h1>
+          <p class="lede">
+            OpenCortex analyzed a core OpenClaw benchmark slice and surfaced architectural shape in
+            about 3.4 seconds.
+          </p>
+          <div class="stats-grid report-stats">
+            <div><strong>1,090</strong><span>files</span></div>
+            <div><strong>8,462</strong><span>symbols</span></div>
+            <div><strong>10,407</strong><span>edges</span></div>
+            <div><strong>30</strong><span>communities</span></div>
+            <div><strong>48</strong><span>flows</span></div>
+            <div><strong>3456ms</strong><span>duration</span></div>
+          </div>
+        </section>
+
+        <section class="grid two-up">
+          <article class="card report-card">
+            <h2>Stats</h2>
+            <ul>
+              <li><strong>Commit:</strong> <code>e0d1810632</code></li>
+              <li><strong>Files:</strong> 1090</li>
+              <li><strong>Symbols:</strong> 8462</li>
+              <li><strong>Edges:</strong> 10407</li>
+              <li><strong>Communities:</strong> 30</li>
+              <li><strong>Flows:</strong> 48</li>
+              <li><strong>Languages:</strong> TypeScript</li>
+              <li><strong>Duration:</strong> 3456ms</li>
+            </ul>
+          </article>
+
+          <article class="card report-card">
+            <h2>Top communities</h2>
+            <ul>
+              <li><strong>agents</strong> — 3237 symbols, cohesion 0.001</li>
+              <li><strong>gateway</strong> — 1590 symbols, cohesion 0.002</li>
+              <li><strong>plugins</strong> — 661 symbols, cohesion 0.002</li>
+              <li><strong>tools</strong> — 443 symbols, cohesion 0.005</li>
+              <li><strong>sandbox</strong> — 373 symbols, cohesion 0.007</li>
+              <li><strong>pi-embedded-runner</strong> — 358 symbols, cohesion 0.005</li>
+              <li><strong>server-methods</strong> — 288 symbols, cohesion 0.005</li>
+              <li><strong>channels</strong> — 202 symbols, cohesion 0.006</li>
+              <li><strong>schema</strong> — 163 symbols, cohesion 0</li>
+              <li><strong>auth-profiles</strong> — 160 symbols, cohesion 0.015</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="card report-card">
+          <h2>Critical symbols</h2>
+          <ul class="dense-list">
+            <li><strong>push</strong> (critical) — in:385 out:0 at <code>src/agents/openai-ws-stream.ts:140</code></li>
+            <li><strong>get</strong> (critical) — in:255 out:0 at <code>src/gateway/node-registry.ts:107</code></li>
+            <li><strong>add</strong> (critical) — in:177 out:0 at <code>src/cron/service.ts:45</code></li>
+            <li><strong>resolve</strong> (critical) — in:164 out:2 at <code>src/gateway/mcp-http.runtime.ts:28</code></li>
+            <li><strong>resolve</strong> (critical) — in:165 out:0 at <code>src/gateway/exec-approval-manager.ts:104</code></li>
+            <li><strong>runEmbeddedAttempt</strong> (low) — in:0 out:151 at <code>src/agents/pi-embedded-runner/run/attempt.ts:359</code></li>
+            <li><strong>compactEmbeddedPiSessionDirect</strong> (low) — in:0 out:90 at <code>src/agents/pi-embedded-runner/compact.ts:304</code></li>
+            <li><strong>runEmbeddedPiAgent</strong> (low) — in:1 out:85 at <code>src/agents/pi-embedded-runner/run.ts:197</code></li>
+            <li><strong>normalizeProviderId</strong> (critical) — in:66 out:0 at <code>src/agents/provider-id.ts:3</code></li>
+            <li><strong>writeFile</strong> (critical) — in:55 out:1 at <code>src/agents/sandbox/fs-bridge.ts:74</code></li>
+          </ul>
+        </section>
+
+        <section class="card report-card">
+          <h2>Representative execution flows</h2>
+          <ul class="dense-list">
+            <li><code>resolveEffectiveToolInventory → normalizeProviderId</code> (cross_community, 11 steps)</li>
+            <li><code>compactEmbeddedPiSessionDirect → normalizeProviderId</code> (cross_community, 11 steps)</li>
+            <li><code>removeSandboxBrowserContainer → resolveWatchdogState</code> (cross_community, 10 steps)</li>
+            <li><code>ensurePiAuthJsonFromAuthProfiles → resolveOpenClawAgentDir</code> (cross_community, 6 steps)</li>
+            <li><code>ensureSkillsWatcher → buildRegistryPluginIdAliases</code> (cross_community, 6 steps)</li>
+            <li><code>resolveSessionKeyFromResolveParams → resolveSessionTranscriptPath</code> (cross_community, 6 steps)</li>
+            <li><code>sendExecApprovalFollowup → canonicalizeToolGatewayWsUrl</code> (cross_community, 5 steps)</li>
+            <li><code>createGatewayConfigModuleMock → stableStringify</code> (cross_community, 5 steps)</li>
+            <li><code>buildAuthHealthSummary → resolveTokenExpiryState</code> (cross_community, 4 steps)</li>
+            <li><code>runBtwSideQuestion → listAgentEntries</code> (cross_community, 4 steps)</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
