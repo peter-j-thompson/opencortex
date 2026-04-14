@@ -108,7 +108,8 @@ main {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0 0 16px;
   line-height: 1.05;
 }
@@ -120,6 +121,10 @@ h1 {
 
 h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+h3 {
+  font-size: 1.15rem;
 }
 
 .lede,
@@ -200,6 +205,22 @@ ol {
   padding-left: 20px;
 }
 
+.compare-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 10px;
+}
+
+.compare-card {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.accent-card {
+  background: linear-gradient(180deg, rgba(116, 165, 255, 0.12), rgba(159, 124, 255, 0.08));
+}
+
 li + li {
   margin-top: 8px;
 }
@@ -249,7 +270,8 @@ li + li {
 
 @media (max-width: 900px) {
   .grid.two-up,
-  .stats-grid {
+  .stats-grid,
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 

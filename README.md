@@ -1,20 +1,23 @@
 # OpenCortex
 
-### Architectural code intelligence for AI agents and developers
+### Structural pre-flight for coding agents and developers
 
 [![npm version](https://img.shields.io/npm/v/opencortex.svg)](https://www.npmjs.com/package/opencortex)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 
-OpenCortex parses a TypeScript or JavaScript codebase into a graph of **symbols, call relationships, communities, and execution flows** so an AI agent can understand architecture before it changes code.
+OpenCortex parses a TypeScript or JavaScript codebase into a graph of **symbols, call relationships, communities, critical symbols, and execution flows** so an AI agent can understand architecture before it changes code.
 
-**Short version:** OpenCortex gives AI agents a senior-engineer-level map of a repo in seconds.
+**Short version:** OpenCortex gives coding agents an architectural map before they write code.
+
+> Wikis explain. Retrieval finds. OpenCortex maps architecture.
 
 ### Why people care
 
-- **Pre-flight for coding agents**: run OpenCortex before an agent edits code.
+- **Structural pre-flight for coding agents**: run OpenCortex before an agent edits code.
 - **Architecture visibility**: see critical symbols, cross-community boundaries, and execution paths.
+- **Architecture, not fuzzy retrieval**: better than guessing from snippets and vague summaries.
 - **Local-first and open source**: no vector DB, no hosted indexing pipeline, no proprietary lock-in.
 
 ### Quick proof
@@ -36,6 +39,7 @@ See the benchmark report: [`examples/reports/openclaw-core.md`](./examples/repor
 - **Try it**: `opencortex analyze /path/to/your/project`
 - **See a real report**: [`examples/reports/openclaw-core.md`](./examples/reports/openclaw-core.md)
 - **Marketing draft**: [`MARKETING.md`](./MARKETING.md)
+- **Positioning notes**: [`POSITIONING.md`](./POSITIONING.md)
 - **Landing page source**: [`site/`](./site)
 
 ```bash

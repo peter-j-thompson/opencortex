@@ -2,12 +2,16 @@
 
 ## Positioning
 
-**OpenCortex is code intelligence for AI agents and developers.**
-It turns a TypeScript or JavaScript codebase into an architectural graph of symbols, call relationships, communities, and execution flows so an agent can understand the repo before it changes anything.
+**OpenCortex is the structural pre-flight layer for coding agents.**
+It turns a TypeScript or JavaScript codebase into an architectural graph of symbols, call relationships, communities, critical symbols, and execution flows so an agent can understand the repo before it changes anything.
 
 Short version:
 
-> OpenCortex gives AI agents a senior-engineer-level map of a codebase in seconds.
+> OpenCortex gives coding agents an architectural map before they write code.
+
+Core mental model:
+
+> Wikis explain. Retrieval finds. OpenCortex maps architecture.
 
 ## Who this is for first
 
@@ -28,6 +32,7 @@ Most tools give one of these:
 - embeddings
 - file trees
 - vague summaries
+- wiki-like explanations
 
 Those are useful, but they do not tell an agent:
 - which symbols are truly critical
@@ -36,6 +41,23 @@ Those are useful, but they do not tell an agent:
 - what the likely execution paths are
 
 OpenCortex does.
+
+## Comparison framing
+
+### Against DeepWiki-style tools
+- they explain code well
+- they help humans browse and learn
+- they are weaker as structural pre-flight before an edit
+
+### Against embeddings/search tools
+- they help retrieve relevant snippets
+- they are weak on architectural truth
+- they do not compute boundaries and flows directly
+
+### Against GitNexus-style platforms
+- those are broader repo-intelligence platforms
+- OpenCortex is the cleaner structural-analysis core
+- easier to embed, easier to trust, easier to explain
 
 ## Why it is interesting
 
@@ -62,7 +84,7 @@ See: `examples/reports/openclaw-core.md`
 
 ## Strongest messaging angles
 
-### Angle 1: Pre-flight for coding agents
+### Angle 1: Structural pre-flight for coding agents
 Before an agent edits code, run OpenCortex.
 It gets a structural map instead of guessing from retrieval.
 
@@ -75,12 +97,12 @@ Run it on a messy TypeScript repo and get useful structure in seconds.
 ## Homepage draft
 
 ### Hero
-**Architectural code intelligence for AI agents**
+**Give your agent an architectural map before it writes code**
 
-OpenCortex parses your codebase into symbols, call graphs, communities, and execution flows so agents and developers can understand architecture before making changes.
+OpenCortex turns your codebase into symbols, call graphs, communities, critical symbols, and execution flows so agents and developers can plan against real architecture instead of fuzzy retrieval.
 
 ### Subhead
-Senior-engineer-level repo context in seconds. Local-first. Open source. No proprietary indexing pipeline required.
+Structural pre-flight for coding agents. Local-first. Open source. No proprietary indexing pipeline required.
 
 ### CTA ideas
 - Analyze a repo in 30 seconds

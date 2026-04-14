@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenCortex, Architectural code intelligence for AI agents</title>
+    <title>OpenCortex, Structural pre-flight for coding agents</title>
     <meta
       name="description"
-      content="OpenCortex parses TypeScript and JavaScript repos into symbols, call graphs, communities, and execution flows so AI agents and developers can understand architecture before making changes."
+      content="OpenCortex gives coding agents an architectural map before they write code. Analyze TypeScript and JavaScript repos into symbols, call graphs, communities, critical symbols, and execution flows."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -23,12 +23,12 @@
 
       <main>
         <section class="hero card">
-          <div class="eyebrow">Agent-native code intelligence</div>
-          <h1>Architectural code intelligence for AI agents</h1>
+          <div class="eyebrow">Structural pre-flight for coding agents</div>
+          <h1>Give your agent an architectural map before it writes code</h1>
           <p class="lede">
-            OpenCortex parses your TypeScript and JavaScript codebase into symbols, call graphs,
-            communities, and execution flows so agents and developers can understand architecture
-            before making changes.
+            OpenCortex turns your TypeScript and JavaScript codebase into symbols, call graphs,
+            communities, critical symbols, and execution flows so agents can plan against real
+            architecture instead of fuzzy retrieval.
           </p>
 
           <div class="actions">
@@ -56,16 +56,17 @@
           <article class="card">
             <h2>The problem</h2>
             <p>
-              Most repo-aware AI workflows still lean on keyword search, embeddings, file trees,
-              and vague summaries. That helps with retrieval, but not with architecture.
+              Most repo-aware AI workflows still rely on keyword search, embeddings, file trees,
+              vague summaries, and wiki-like explanations. Those help with retrieval and
+              orientation, but they do not tell an agent how the code is actually wired.
             </p>
             <ul>
-              <li>Which symbols are critical?</li>
-              <li>Which modules actually form boundaries?</li>
-              <li>Where do cross-module dependencies really live?</li>
+              <li>Which symbols are truly critical?</li>
+              <li>Which modules form real boundaries?</li>
+              <li>Where do cross-module dependencies actually live?</li>
               <li>What are the likely execution paths?</li>
             </ul>
-            <p>OpenCortex gives that map before the edit happens.</p>
+            <p>OpenCortex gives that map.</p>
           </article>
 
           <article class="card">
@@ -80,6 +81,28 @@
           </article>
         </section>
 
+        <section class="card">
+          <div class="eyebrow">Where it fits</div>
+          <h2>Wikis explain. Retrieval finds. OpenCortex maps architecture.</h2>
+          <div class="grid compare-grid">
+            <article class="compare-card">
+              <h3>Retrieval tools</h3>
+              <p>Great for finding files and snippets. Weak on architectural truth.</p>
+            </article>
+            <article class="compare-card">
+              <h3>Wiki tools</h3>
+              <p>Great for explaining code to humans. Weak on structural dependency mapping.</p>
+            </article>
+            <article class="compare-card accent-card">
+              <h3>OpenCortex</h3>
+              <p>
+                Maps the codebase itself so agents get structure, boundaries, and execution paths
+                before they change anything.
+              </p>
+            </article>
+          </div>
+        </section>
+
         <section class="grid two-up">
           <article class="card">
             <h2>Why this matters for agents</h2>
@@ -90,7 +113,7 @@
               <li>Let the agent plan against real architecture instead of guesses</li>
             </ol>
             <p>
-              It gives coding agents a senior-engineer-level map of a repo in seconds.
+              It gives coding agents architecture-aware context before they write a single line.
             </p>
           </article>
 
@@ -108,8 +131,10 @@
         <section class="card">
           <h2>Why OpenCortex is different</h2>
           <div class="pill-row">
+            <span class="pill">Architecture, not fuzzy retrieval</span>
             <span class="pill">Local-first</span>
             <span class="pill">Open source</span>
+            <span class="pill">MIT-licensed</span>
             <span class="pill">No proprietary dependencies</span>
             <span class="pill">No hosted indexing requirement</span>
             <span class="pill">No vector database required</span>
@@ -152,10 +177,10 @@ opencortex analyze /path/to/repo --output markdown --out reports/architecture.md
           </article>
 
           <article class="card">
-            <h2>Use OpenCortex before your agent writes code</h2>
+            <h2>Run OpenCortex before your agent edits a repo</h2>
             <p>
-              If your workflow depends on coding agents, structural repo understanding should not
-              be optional.
+              If your workflow depends on coding agents, architecture-aware context should not be
+              optional.
             </p>
             <div class="actions stacked-mobile">
               <a
